@@ -1,6 +1,6 @@
 export const theme = {
   primary: {
-    color: '#feca1f',
+    color: '#fed348',
     text: '#000',
   },
   secondary: {
