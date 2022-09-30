@@ -1,5 +1,12 @@
+import Button from './components/Button'
+
 function App() {
-  return <div className="App">TEste</div>
+  return (
+    <div>
+      <Button secondary title="teste" />
+      TEste
+    </div>
+  )
 }
 
 export default App
