@@ -18,4 +18,8 @@ export const NavBarContainer = styled.nav`
   li {
     margin: 20px;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `
