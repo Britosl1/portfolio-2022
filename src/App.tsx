@@ -1,12 +1,7 @@
-import Button from './components/Button'
+import NavBar from './sections/NavBar'
 
 function App() {
-  return (
-    <div>
-      <Button secondary title="teste" />
-      TEste
-    </div>
-  )
+  return <NavBar />
 }
 
 export default App
