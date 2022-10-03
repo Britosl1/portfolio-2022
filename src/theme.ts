@@ -4,7 +4,7 @@ export const theme = {
     text: '#000',
   },
   secondary: {
-    color: '#8a00c2',
+    color: '#9b6dff',
     text: '#fff',
   },
 }
