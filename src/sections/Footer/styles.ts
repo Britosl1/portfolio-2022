@@ -7,10 +7,17 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 720px) {
+    height: 100%;
+  }
 `
 
 export const TopFooterContainer = styled.div`
   display: flex;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const LeftFooterContainer = styled.div`
@@ -18,6 +25,18 @@ export const LeftFooterContainer = styled.div`
   flex-direction: column;
   width: 50%;
   padding: 10px 10px;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    h1 {
+      text-align: center;
+      font-size: 28px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
 
   h1 {
     font-weight: 700;
@@ -34,6 +53,13 @@ export const RightFooterContainer = styled.form`
   border-radius: 20px;
   border: 1px solid ${(props) => props.theme.primary.color};
   padding: 10px 10px;
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    button {
+      align-self: center;
+      width: 100%;
+    }
+  }
 
   label {
     font-size: 14px;
@@ -44,7 +70,7 @@ export const RightFooterContainer = styled.form`
   input,
   textarea {
     border-radius: 4px;
-    padding: 0px 6px;
+    padding: 4px 6px;
     margin-bottom: 8px;
     border: none;
   }
@@ -56,10 +82,17 @@ export const BottomFooterContainer = styled.div`
   justify-content: space-between;
   padding-top: 16px;
   margin-bottom: 0px;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   p {
     display: flex;
     align-items: center;
     font-size: 14px;
+    @media screen and (max-width: 720px) {
+      margin-bottom: 8px;
+    }
   }
 `
