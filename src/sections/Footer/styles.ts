@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
   justify-content: space-between;
   @media screen and (max-width: 720px) {
     height: 100%;
+    padding: 30px;
   }
 `
 
@@ -90,7 +91,8 @@ export const BottomFooterContainer = styled.div`
   p {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
     @media screen and (max-width: 720px) {
       margin-bottom: 8px;
     }

@@ -7,7 +7,6 @@ import {
   RightFooterContainer,
 } from './styles'
 
-import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai'
 import { DiReact } from 'react-icons/di'
 import { SiTypescript, SiStyledcomponents } from 'react-icons/si'
 import Button from '../../components/Button'
@@ -37,14 +36,8 @@ const Footer: React.FC = () => {
         <p>
           Made with: <DiReact /> <SiTypescript /> <SiStyledcomponents />
         </p>
-        <p>
-          <AiTwotonePhone />
-          +55 31 98785-4062
-        </p>
-        <p>
-          <AiOutlineMail />
-          lucasbrito.carneiro@gmail.com
-        </p>
+        <p>+55 31 98785-4062</p>
+        <p>lucasbrito.carneiro@gmail.com</p>
       </BottomFooterContainer>
     </FooterContainer>
   )
