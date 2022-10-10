@@ -5,13 +5,24 @@ import { ButtonContainerPrimary, ButtonContainerSecondary } from './styles'
 interface IButtonProps {
   secondary?: boolean
   title: string
+  icon?: JSX.Element
+  onClick: () => void
 }
 
-const Button: React.FC<IButtonProps> = ({ secondary, title }) => {
+const Button: React.FC<IButtonProps> = ({
+  secondary,
+  title,
+  icon,
+  onClick,
+}) => {
   return !secondary ? (
-    <ButtonContainerPrimary>{title}</ButtonContainerPrimary>
+    <ButtonContainerPrimary onClick={onClick}>
+      {title} {icon}
+    </ButtonContainerPrimary>
   ) : (
-    <ButtonContainerSecondary>{title}</ButtonContainerSecondary>
+    <ButtonContainerSecondary onClick={onClick}>
+      {title} {icon}
+    </ButtonContainerSecondary>
   )
 }
 

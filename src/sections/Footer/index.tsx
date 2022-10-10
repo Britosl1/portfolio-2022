@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           <input type="text" />
           <label htmlFor="">Message</label>
           <textarea rows={3} />
-          <Button title="Send" secondary />
+          <Button title="Send" secondary onClick={() => {}} />
         </RightFooterContainer>
       </TopFooterContainer>
       <BottomFooterContainer>

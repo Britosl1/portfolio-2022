@@ -10,7 +10,9 @@ export const NavigationContainer = styled.nav`
   font-size: 14px;
   top: 0;
   position: fixed;
-  background-color: ${(props) => props.theme.secondary.text};
+  background-color: #f9f9f9;
+  z-index: 1;
+
   ul {
     display: flex;
     list-style: none;
