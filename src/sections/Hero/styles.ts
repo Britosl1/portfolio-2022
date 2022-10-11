@@ -17,6 +17,18 @@ export const HeroLeftContainer = styled.div`
     font-size: 44px;
     margin-bottom: 40px;
   }
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    h1 {
+      font-size: 44px;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    h1 {
+      font-size: 38px;
+    }
+  }
 `
 
 export const HeroRightContainer = styled.div`
@@ -27,6 +39,9 @@ export const HeroRightContainer = styled.div`
   justify-content: center;
   img {
     border-radius: 100%;
+  }
+  @media screen and (max-width: 720px) {
+    display: none;
   }
 `
 
@@ -39,4 +54,9 @@ export const IconsContainer = styled.div`
   position: absolute;
   bottom: 30px;
   width: 220px;
+  @media screen and (max-width: 340px) {
+    bottom: 0px;
+    width: 200px;
+    text-align: left;
+  }
 `

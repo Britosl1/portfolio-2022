@@ -20,6 +20,8 @@ export const NavigationMobileContainer = styled.nav`
     height: 100%;
     min-width: 70%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform ease 0.3s;
+    z-index: 1;
     ul {
       list-style: none;
     }

@@ -12,6 +12,7 @@ import {
 
 import { FiSend } from 'react-icons/fi'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { theme } from '../../theme'
 
 const Hero: React.FC = () => {
   const scrollToContact = () => {
@@ -20,7 +21,10 @@ const Hero: React.FC = () => {
   return (
     <HeroContainer id="about">
       <HeroLeftContainer>
-        <h1>Hello! I'm a Front End Developer!</h1>
+        <h1>
+          Hello! I'm a
+          <h1 style={{ color: theme.primary.color }}>Front End Developer!</h1>
+        </h1>
         <Button
           title={`Let's Talk!`}
           icon={<FiSend />}
@@ -30,10 +34,10 @@ const Hero: React.FC = () => {
         <IconsContainer>
           <p>Check Out My</p>
           <a href="https://www.linkedin.com/in/lucas-c-brito/" target="_blanck">
-            <RoundIcon icon={<AiFillLinkedin />} />
+            <RoundIcon icon={<AiFillLinkedin size={30} />} />
           </a>
           <a href="https://github.com/Britosl1/" target="_blanck">
-            <RoundIcon icon={<AiFillGithub />} />
+            <RoundIcon icon={<AiFillGithub size={30} />} />
           </a>
         </IconsContainer>
       </HeroLeftContainer>
