@@ -6,6 +6,9 @@ export const HeroContainer = styled.section`
   margin-top: 3.5rem;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 720px) {
+    padding: 30px;
+  }
 `
 export const HeroLeftContainer = styled.div`
   display: flex;

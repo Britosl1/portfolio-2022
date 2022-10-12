@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-  height: 20rem;
   padding: 30px 60px;
   background-color: ${(props) => props.theme.primary.color};
   display: flex;
@@ -32,7 +31,7 @@ export const LeftFooterContainer = styled.div`
     width: 100%;
     h1 {
       text-align: center;
-      font-size: 28px !important;
+      font-size: 38px !important;
     }
     p {
       font-size: 16px !important;

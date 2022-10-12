@@ -23,7 +23,10 @@ export const NavigationContainer = styled.nav`
   a {
     text-decoration: none;
     color: inherit;
-    &:hover {
+    font-size: 14.5px;
+    font-weight: 600;
+    &:hover,
+    &:focus {
       color: ${({ theme }) => theme.primary.color};
     }
   }

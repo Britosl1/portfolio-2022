@@ -22,7 +22,7 @@ const ExperienceBox: React.FC<IExperienceBoxProps> = ({
   return (
     <ExperienceBoxContainer>
       <ExperienceInfoContainer>
-        <p>
+        <p className="date-container">
           {startDate} - {endDate}
         </p>
         <ExperienceCompanyContainer>
