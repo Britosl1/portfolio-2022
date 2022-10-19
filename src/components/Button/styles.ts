@@ -29,6 +29,7 @@ export const ButtonContainerSecondary = styled.button`
   border: none;
   :hover {
     opacity: 0.8;
+    transition: 0.8s ease;
     color: ${(props) => props.theme.primary.text};
     cursor: pointer;
   }

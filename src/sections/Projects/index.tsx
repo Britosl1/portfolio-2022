@@ -5,12 +5,13 @@ import Img from '../../images/pp.jpeg'
 import { Carousel } from 'react-responsive-carousel'
 
 import { ProjectsContainer } from './styles'
+import ProjectsBox from '../../components/ProjectsBox'
 
 const Projects: React.FC = () => {
   return (
     <ProjectsContainer id="projects">
       <h1>Projects I've done and worked on</h1>
-      <Carousel showThumbs={false}>
+      {/* <Carousel showThumbs={false}>
         <div>
           <h2>Teste Nome</h2>
           <img src={Img} alt="rw" />
@@ -18,7 +19,8 @@ const Projects: React.FC = () => {
         <div>TEste2</div>
         <div>TEste3</div>
         <div>TEste4</div>
-      </Carousel>
+      </Carousel> */}
+      <ProjectsBox />
     </ProjectsContainer>
   )
 }

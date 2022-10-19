@@ -9,6 +9,15 @@ const GlobalStyles = createGlobalStyle`
        box-sizing:border-box;
        font-family: 'Roboto', sans-serif;
        scroll-behavior: smooth;
+       animation: fade 0.8s ease-in;
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
    }
    #root{
        margin:0 auto;
