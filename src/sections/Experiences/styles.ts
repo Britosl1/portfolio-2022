@@ -15,7 +15,7 @@ export const ExperiencesLeftContainer = styled.div`
   flex-direction: column;
   padding: 30px 0px;
   h1 {
-    font-size: 60px;
+    font-size: 44px;
     margin-bottom: 16px;
   }
 

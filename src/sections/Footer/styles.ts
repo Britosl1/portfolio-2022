@@ -25,6 +25,9 @@ export const LeftFooterContainer = styled.div`
   flex-direction: column;
   width: 50%;
   padding: 10px 10px;
+  h1 {
+    font-size: 44px !important;
+  }
   @media screen and (max-width: 720px) {
     flex-direction: column;
     align-items: center;

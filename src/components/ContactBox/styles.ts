@@ -22,4 +22,15 @@ export const ContactBoxInfoContainer = styled.div`
   h4 {
     font-weight: 600;
   }
+
+  @media screen and (max-width: 720px) {
+    p {
+      font-size: 10px;
+    }
+
+    h4 {
+      font-size: 14px;
+      line-break: anywhere;
+    }
+  }
 `

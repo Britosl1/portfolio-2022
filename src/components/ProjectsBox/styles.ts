@@ -8,21 +8,46 @@ export const ProjectBoxContainer = styled.div`
   padding-top: 20px;
   div {
     display: flex;
-    /* margin-bottom: 6px; */
     align-items: center;
+    justify-content: space-between;
     h4 {
-      font-size: 26px;
+      font-size: 24px;
     }
   }
 
-  p {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+  }
+
+  li {
     font-size: 14px;
     color: grey;
     font-weight: 600;
-    margin-bottom: 20px;
+    list-style: none;
+    margin: 0px 2px;
+    :not(:last-child):after {
+      content: ' -';
+    }
   }
 
   img {
-    max-width: 200px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1044px) {
+    div {
+      display: block;
+    }
+    h4 {
+      font-size: 20px !important;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    div {
+      display: flex;
+    }
   }
 `

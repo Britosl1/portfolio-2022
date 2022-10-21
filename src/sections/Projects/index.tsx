@@ -1,26 +1,45 @@
 import React from 'react'
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-import Img from '../../images/pp.jpeg'
+import magalu from '../../images/magalu.png'
+import carrefour from '../../images/carrefour.png'
+import bestSongs from '../../images/best-songs.png'
 
-import { Carousel } from 'react-responsive-carousel'
-
-import { ProjectsContainer } from './styles'
+import {
+  ProjectsContainer,
+  SectionOne,
+  SectionTwo,
+  SectionThree,
+} from './styles'
 import ProjectsBox from '../../components/ProjectsBox'
+import { bestSongsStack, ninenineJobsStack } from './projectsData'
 
 const Projects: React.FC = () => {
   return (
     <ProjectsContainer id="projects">
-      <h1>Projects I've done and worked on</h1>
-      {/* <Carousel showThumbs={false}>
-        <div>
-          <h2>Teste Nome</h2>
-          <img src={Img} alt="rw" />
-        </div>
-        <div>TEste2</div>
-        <div>TEste3</div>
-        <div>TEste4</div>
-      </Carousel> */}
-      <ProjectsBox />
+      <SectionOne>
+        <h1>Some projects!</h1>
+        <ProjectsBox
+          projectName="Magalu Recruiment Site"
+          url="https://carreiras.magazineluiza.com.br/"
+          img={magalu}
+          stacks={ninenineJobsStack}
+        />
+      </SectionOne>
+      <SectionTwo>
+        <ProjectsBox
+          projectName="Carrefour Recruiment Site"
+          url="https://carrefour.99jobs.com/"
+          img={carrefour}
+          stacks={ninenineJobsStack}
+        />
+      </SectionTwo>
+      <SectionThree>
+        <ProjectsBox
+          projectName="Best Songs - Full Stack"
+          url="https://github.com/Britosl1/bestSongs-app"
+          img={bestSongs}
+          stacks={bestSongsStack}
+        />
+      </SectionThree>
     </ProjectsContainer>
   )
 }

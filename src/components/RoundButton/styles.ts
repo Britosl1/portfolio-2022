@@ -10,4 +10,10 @@ export const RoundButtonContainer = styled.button`
   background-color: ${({ theme }) => theme.secondary.color};
   border: none;
   color: white;
+  cursor: pointer;
+  :hover {
+    transition: 0.5s;
+    height: 44px;
+    width: 44px;
+  }
 `
