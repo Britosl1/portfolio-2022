@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../../components/Button'
 import RoundIcon from '../../components/RoundIcon'
 import Img from '../../images/pp.jpeg'
@@ -13,11 +13,11 @@ import {
 import { FiSend } from 'react-icons/fi'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { theme } from '../../theme'
+import ContactForm from '../../components/ContactForm'
 
 const Hero: React.FC = () => {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView()
-  }
+  const [show, setShow] = useState<boolean>(false)
+
   return (
     <HeroContainer id="about">
       <HeroLeftContainer>
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
           title={`Let's Talk!`}
           icon={<FiSend />}
           secondary
-          onClick={scrollToContact}
+          onClick={() => setShow(!show)}
         />
         <IconsContainer>
           <p>Check Out My</p>
@@ -45,6 +45,7 @@ const Hero: React.FC = () => {
         <div id="octagon" />
         <img src={Img} alt="lucas-brito-img" />
       </HeroRightContainer>
+      {show && <ContactForm onClose={() => setShow(!show)} />}
     </HeroContainer>
   )
 }

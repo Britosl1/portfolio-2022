@@ -2,11 +2,11 @@ import React from 'react'
 
 import { ButtonContainerPrimary, ButtonContainerSecondary } from './styles'
 
-interface IButtonProps {
+interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   secondary?: boolean
   title: string
   icon?: JSX.Element
-  onClick: () => void
+  onClick?: () => void
 }
 
 const Button: React.FC<IButtonProps> = ({
@@ -14,13 +14,14 @@ const Button: React.FC<IButtonProps> = ({
   title,
   icon,
   onClick,
+  ...props
 }) => {
   return !secondary ? (
-    <ButtonContainerPrimary onClick={onClick}>
+    <ButtonContainerPrimary onClick={onClick} {...props}>
       {title} {icon}
     </ButtonContainerPrimary>
   ) : (
-    <ButtonContainerSecondary onClick={onClick}>
+    <ButtonContainerSecondary onClick={onClick} {...props}>
       {title} {icon}
     </ButtonContainerSecondary>
   )

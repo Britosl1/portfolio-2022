@@ -4,12 +4,10 @@ import {
   BottomFooterContainer,
   TopFooterContainer,
   LeftFooterContainer,
-  RightFooterContainer,
 } from './styles'
 
 import { DiReact } from 'react-icons/di'
 import { SiTypescript, SiStyledcomponents } from 'react-icons/si'
-import Button from '../../components/Button'
 import ContactBox from '../../components/ContactBox'
 import RoundIcon from '../../components/RoundIcon'
 import { AiFillPhone, AiOutlineMail } from 'react-icons/ai'
@@ -41,15 +39,6 @@ const Footer: React.FC = () => {
             icon={<RoundIcon icon={<GoLocation size={26} />} whiteBackground />}
           />
         </LeftFooterContainer>
-        <RightFooterContainer>
-          <label htmlFor="">Name</label>
-          <input type="text" />
-          <label htmlFor="">Email</label>
-          <input type="text" />
-          <label htmlFor="">Message</label>
-          <textarea rows={3} />
-          <Button title="Send" secondary onClick={() => {}} />
-        </RightFooterContainer>
       </TopFooterContainer>
       <BottomFooterContainer>
         <p>

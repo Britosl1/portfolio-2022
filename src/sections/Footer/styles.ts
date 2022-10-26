@@ -23,15 +23,16 @@ export const TopFooterContainer = styled.div`
 export const LeftFooterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   padding: 10px 10px;
   h1 {
     font-size: 44px !important;
+    margin-bottom: 30px !important;
   }
   @media screen and (max-width: 720px) {
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     h1 {
       text-align: center;
       font-size: 38px !important;
@@ -48,34 +49,12 @@ export const LeftFooterContainer = styled.div`
   }
 `
 
-export const RightFooterContainer = styled.form`
+export const RightFooterContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 50%;
-  border-radius: 20px;
-  border: 1px solid ${(props) => props.theme.primary.color};
-  padding: 10px 10px;
   @media screen and (max-width: 720px) {
     width: 100%;
-    button {
-      align-self: center;
-      width: 100%;
-    }
-  }
-
-  label {
-    font-size: 14px;
-  }
-  input {
-    height: 20px;
-  }
-  input,
-  textarea {
-    border-radius: 4px;
-    padding: 4px 6px;
-    margin-bottom: 8px;
-    border: none;
+    display: none;
   }
 `
 
