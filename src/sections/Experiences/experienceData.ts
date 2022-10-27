@@ -8,8 +8,8 @@ export const experienceData = [
   },
   {
     id: '2',
-    startDate: 'Jun/2021',
-    endDate: 'Jul/2021',
+    startDate: 'Jun/2022',
+    endDate: 'Jul/2022',
     company: 'Hap Rocket (Freelancer)',
     role: 'Front End Developer',
   },
