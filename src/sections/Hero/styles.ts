@@ -9,6 +9,22 @@ export const HeroContainer = styled.section`
   @media screen and (max-width: 720px) {
     padding: 30px;
   }
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: ${({ theme }) => theme.primary.color};
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    right: 30px;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    @media screen and (max-width: 720px) {
+      padding: 30px;
+      opacity: 0.12;
+    }
+  }
 `
 export const HeroLeftContainer = styled.div`
   display: flex;
