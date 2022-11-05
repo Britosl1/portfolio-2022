@@ -15,7 +15,7 @@ import { Variants, motion } from 'framer-motion'
 
 const projectVariant: Variants = {
   offscreen: {
-    y: 300,
+    y: 800,
   },
   onscreen: {
     y: 0,
