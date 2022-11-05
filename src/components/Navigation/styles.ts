@@ -10,8 +10,9 @@ export const NavigationContainer = styled.nav`
   font-size: 14px;
   top: 0;
   position: fixed;
-  background-color: #f9f9f9;
   z-index: 1;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   ul {
     display: flex;

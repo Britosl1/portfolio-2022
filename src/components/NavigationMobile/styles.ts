@@ -1,15 +1,17 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const TopNavigationMobileContainer = styled.div`
+export const TopNavigationMobileContainer = styled(motion.nav)`
   .icon {
     display: none;
     @media screen and (max-width: 720px) {
       display: block;
+      /* position: fixed; */
     }
   }
 `
 
-export const NavigationMobileContainer = styled.nav`
+export const NavigationMobileContainer = styled(motion.nav)`
   display: none;
   @media screen and (max-width: 720px) {
     display: flex;
@@ -20,8 +22,10 @@ export const NavigationMobileContainer = styled.nav`
     height: 100%;
     min-width: 70%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    transition: transform ease 0.3s;
     z-index: 1;
+    position: fixed;
+    left: -400px;
+
     ul {
       list-style: none;
     }

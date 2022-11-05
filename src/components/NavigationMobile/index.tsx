@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import { motion } from 'framer-motion'
 
 import {
   NavigationMobileContainer,
@@ -8,6 +9,11 @@ import {
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { theme } from '../../theme'
+
+// const variants = {
+//   open: { opacity: 1, x: 0 },
+//   closed: { opacity: 0, x: '-100%' },
+// }
 
 const NavigationMobile: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false)
@@ -21,7 +27,11 @@ const NavigationMobile: React.FC = () => {
         style={{ left: 20, top: 10, position: 'absolute' }}
       />
       {open && (
-        <NavigationMobileContainer onClick={() => setOpen(!open)}>
+        <NavigationMobileContainer
+          onClick={() => setOpen(!open)}
+          animate={{ x: 400 }}
+          transition={{ ease: 'easeOut', duration: 0.3 }}
+        >
           <ul>
             <li className="first-child-li">
               <a href="#about"> About</a>
