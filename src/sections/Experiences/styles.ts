@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const ExperiencesContainer = styled.section`
+export const ExperiencesContainer = styled(motion.section)`
   padding: 30px 60px;
   display: flex;
   @media screen and (max-width: 720px) {

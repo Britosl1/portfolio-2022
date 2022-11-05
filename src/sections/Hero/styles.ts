@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const HeroContainer = styled.section`
+export const HeroContainer = styled(motion.section)`
   height: 30rem;
   padding: 30px 60px;
   margin-top: 3.5rem;
