@@ -21,7 +21,7 @@ const projectVariant: Variants = {
     y: 0,
     transition: {
       type: 'spring',
-      bounce: 0.4,
+      bounce: 0.1,
       duration: 0.8,
     },
   },

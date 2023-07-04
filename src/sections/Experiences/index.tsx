@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ExperienceBox from '../../components/ExperienceBox'
 import RoundIcon from '../../components/RoundIcon'
 import { experienceData } from './experienceData'
@@ -29,6 +29,19 @@ const experiencesVariant: Variants = {
 }
 
 const Experiences: React.FC = () => {
+  const [company, setCompany] = useState(experienceData)
+
+  const filterCompanies = (companyName: string) => {
+    const filteredData = experienceData.filter(
+      (company) => company.company === companyName
+    )
+    return setCompany(filteredData)
+  }
+
+  useEffect(() => {
+    filterCompanies('Q4 Inc')
+  }, [])
+
   return (
     <motion.div
       initial="offscreen"
@@ -38,31 +51,26 @@ const Experiences: React.FC = () => {
     >
       <ExperiencesContainer id="experience" variants={experiencesVariant}>
         <ExperiencesLeftContainer>
-          <h1>Skills & Experience</h1>
-          <p>Former B2B Sales Manager, now working as a Front End Developer</p>
+          <h1>Companies I've worked on!</h1>
           <SkillsContainer>
-            <h2>Skills</h2>
-            <SkillsIconsContainer>
-              <RoundIcon icon={<SiJavascript size={22} />} />
-              <RoundIcon icon={<SiTypescript size={22} />} />
-              <RoundIcon icon={<SiReact size={22} />} />
-              <RoundIcon icon={<FaVuejs size={22} />} />
-              <RoundIcon icon={<FaNodeJs size={22} />} />
-              <RoundIcon icon={<SiMongodb size={22} />} />
-            </SkillsIconsContainer>
+            <button onClick={() => filterCompanies('Q4 Inc')}>Q4 Inc</button>
+            <button onClick={() => filterCompanies('99jobs')}>99Jobs</button>
+            <button onClick={() => filterCompanies('DB1 Group')}>
+              DB1 Group
+            </button>
+            <button onClick={() => filterCompanies('LeCupon')}>LeCupon</button>
           </SkillsContainer>
-        </ExperiencesLeftContainer>
-        <ExperiencesRightContainer>
-          {experienceData.map((exp) => (
+          {company.map((exp) => (
             <ExperienceBox
               key={exp.id}
               startDate={exp.startDate}
               endDate={exp.endDate}
               company={exp.company}
               role={exp.role}
+              activities={exp.activities}
             />
           ))}
-        </ExperiencesRightContainer>
+        </ExperiencesLeftContainer>
       </ExperiencesContainer>
     </motion.div>
   )

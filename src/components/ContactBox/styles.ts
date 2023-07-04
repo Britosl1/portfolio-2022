@@ -16,7 +16,7 @@ export const ContactBoxInfoContainer = styled.div`
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 6px;
-    color: grey;
+    color: ${({ theme }) => theme.button.link};
   }
 
   h4 {

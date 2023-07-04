@@ -6,11 +6,17 @@ import {
   ExperienceCompanyContainer,
 } from './styles'
 
+type ActivitiesProps = {
+  id: string
+  role: string
+}
+
 interface IExperienceBoxProps {
   startDate: string
   endDate: string
   role: string
   company: string
+  activities: ActivitiesProps[]
 }
 
 const ExperienceBox: React.FC<IExperienceBoxProps> = ({
@@ -18,16 +24,24 @@ const ExperienceBox: React.FC<IExperienceBoxProps> = ({
   endDate,
   role,
   company,
+  activities,
 }) => {
   return (
     <ExperienceBoxContainer>
       <ExperienceInfoContainer>
-        <p className="date-container">
-          {startDate} - {endDate}
-        </p>
         <ExperienceCompanyContainer>
-          <h4>{role}</h4>
-          <p>{company}</p>
+          <div className="company-container">
+            <h4>{role} at</h4>
+            <span>{company}</span>
+          </div>
+          <p className="date-container">
+            {startDate} - {endDate}
+          </p>
+          <ul>
+            {activities.map((activity) => (
+              <li key={activity.id}>{activity.role}</li>
+            ))}
+          </ul>
         </ExperienceCompanyContainer>
       </ExperienceInfoContainer>
     </ExperienceBoxContainer>

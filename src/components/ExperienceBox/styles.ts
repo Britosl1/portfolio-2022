@@ -7,14 +7,15 @@ export const ExperienceBoxContainer = styled.div`
 `
 
 export const ExperienceInfoContainer = styled.div`
-  display: flex;
   p {
     font-size: 12px;
     font-weight: 600;
   }
-  .date-container {
-    min-width: 130px;
+  span {
+    color: ${({ theme }) => theme.button.link};
+    font-weight: 700;
   }
+
   @media screen and (max-width: 340px) {
     flex-direction: column;
   }
@@ -23,14 +24,40 @@ export const ExperienceInfoContainer = styled.div`
 export const ExperienceCompanyContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 20px;
+
+  .company-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  li {
+    color: ${({ theme }) => theme.primary.text};
+    margin: 5px 0px;
+  }
+
+  li::before {
+    content: '»';
+    color: ${({ theme }) => theme.button.link};
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+  }
   @media screen and (max-width: 340px) {
     margin-left: 0px;
     margin-top: 10px;
   }
 
   p {
-    color: grey;
+    color: ${({ theme }) => theme.primary.text};
     font-weight: 700;
   }
 `

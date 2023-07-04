@@ -4,13 +4,15 @@ import { motion } from 'framer-motion'
 export const ExperiencesContainer = styled(motion.section)`
   display: flex;
   height: 100vh;
+  align-items: center;
   @media screen and (max-width: 769px) {
     flex-direction: column;
+    justify-content: center;
   }
 `
 
 export const ExperiencesLeftContainer = styled.div`
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   padding: 30px 0px;
@@ -41,10 +43,23 @@ export const ExperiencesRightContainer = styled.div`
 `
 
 export const SkillsContainer = styled.div`
-  margin-top: 20px;
-  h2 {
-    font-weight: 800;
+  margin: 20px 0px;
+  display: flex;
+  gap: 10px;
+  button {
+    cursor: pointer;
+    padding: 6px 8px;
+    border: 1px solid ${({ theme }) => theme.primary.text};
+    color: ${({ theme }) => theme.button.link};
+    font-weight: 700;
+    background-color: transparent;
     margin-bottom: 14px;
+    font-size: 16px;
+  }
+  button:hover {
+    border: 1px solid ${({ theme }) => theme.primary.text};
+    color: #0a192f;
+    background-color: ${({ theme }) => theme.primary.text};
   }
 `
 

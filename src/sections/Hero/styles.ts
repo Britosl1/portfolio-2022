@@ -37,7 +37,7 @@ export const IconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: grey;
+  color: ${({ theme }) => theme.button.link};
   font-weight: 700;
   position: absolute;
   bottom: 100px;

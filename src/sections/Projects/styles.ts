@@ -5,6 +5,7 @@ export const ProjectsContainer = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  align-items: center;
   h1 {
     margin-bottom: 16px;
   }
