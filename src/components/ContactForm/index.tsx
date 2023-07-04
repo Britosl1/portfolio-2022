@@ -56,8 +56,6 @@ const ContactForm: React.FC<IContactFormProps> = ({ onClose }) => {
       )
   }
 
-  // const onSubmit = (data: IFormInputs) => console.log(data)
-
   return (
     <BlurContainer>
       <ContactFormContainer onSubmit={handleSubmit(sendEmail)}>

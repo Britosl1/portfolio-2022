@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const ExperiencesContainer = styled(motion.section)`
-  padding: 30px 60px;
   display: flex;
+  height: 100vh;
   @media screen and (max-width: 720px) {
     flex-direction: column;
     padding: 30px;

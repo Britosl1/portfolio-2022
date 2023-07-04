@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const FooterContainer = styled(motion.footer)`
-  padding: 30px 60px;
-  background-color: ${(props) => props.theme.primary.color};
   display: flex;
   flex-direction: column;
   justify-content: space-between;

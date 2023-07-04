@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ProjectBoxContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border-top: 2px solid #000;
+  border-top: 2px solid ${(props) => props.theme.button.link};
   width: 100%;
   padding-top: 20px;
   div {
@@ -23,7 +23,7 @@ export const ProjectBoxContainer = styled.div`
 
   li {
     font-size: 14px;
-    color: grey;
+    color: ${(props) => props.theme.button.link};
     font-weight: 600;
     list-style: none;
     margin: 0px 2px;

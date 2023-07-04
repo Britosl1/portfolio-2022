@@ -17,7 +17,7 @@ export const NavigationMobileContainer = styled(motion.nav)`
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: ${({ theme }) => theme.primary.color};
+    background-color: ${({ theme }) => theme.primary.text};
     top: 0;
     height: 100%;
     min-width: 70%;

@@ -22,7 +22,7 @@ const experiencesVariant: Variants = {
     y: 0,
     transition: {
       type: 'spring',
-      bounce: 0.4,
+      bounce: 0.1,
       duration: 0.8,
     },
   },
@@ -34,6 +34,7 @@ const Experiences: React.FC = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
+      id="experience"
     >
       <ExperiencesContainer id="experience" variants={experiencesVariant}>
         <ExperiencesLeftContainer>

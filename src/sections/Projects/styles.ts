@@ -2,10 +2,9 @@ import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const ProjectsContainer = styled(motion.div)`
-  background-color: ${(props) => props.theme.primary.color};
-  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
+  height: 100vh;
   h1 {
     font-size: 44px;
     margin-bottom: 16px;

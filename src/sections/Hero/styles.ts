@@ -3,17 +3,17 @@ import { motion } from 'framer-motion'
 
 export const HeroContainer = styled(motion.section)`
   height: 30rem;
-  padding: 30px 60px;
   margin-top: 3.5rem;
   display: flex;
   justify-content: space-between;
+  height: 100vh;
   @media screen and (max-width: 720px) {
     padding: 30px;
   }
   &:before {
     content: '';
     position: absolute;
-    background-color: ${({ theme }) => theme.primary.color};
+    background-color: ${({ theme }) => theme.primary.text};
     height: 400px;
     width: 400px;
     border-radius: 100%;
@@ -52,13 +52,14 @@ export const HeroLeftContainer = styled.div`
 `
 
 export const HeroRightContainer = styled.div`
-  display: flex;
+  /* display: flex; */
   width: 50%;
   padding: 30px 0px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   img {
     border-radius: 100%;
+    max-width: 250px;
   }
   @media screen and (max-width: 720px) {
     display: none;

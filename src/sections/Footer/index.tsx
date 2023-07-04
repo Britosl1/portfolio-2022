@@ -7,7 +7,7 @@ import {
 } from './styles'
 
 import { DiReact } from 'react-icons/di'
-import { SiTypescript, SiStyledcomponents } from 'react-icons/si'
+import { SiTypescript, SiStyledcomponents, SiFramer } from 'react-icons/si'
 import ContactBox from '../../components/ContactBox'
 import RoundIcon from '../../components/RoundIcon'
 import { AiFillPhone, AiOutlineMail } from 'react-icons/ai'
@@ -64,7 +64,12 @@ const Footer: React.FC = () => {
         </TopFooterContainer>
         <BottomFooterContainer>
           <p>
-            Made with: <DiReact /> <SiTypescript /> <SiStyledcomponents />
+            Made with: <DiReact size={20} /> &nbsp;
+            <SiTypescript size={14} />
+            &nbsp;
+            <SiStyledcomponents size={20} />
+            &nbsp;
+            <SiFramer size={14} />
           </p>
           <p>+55 31 98785-4062</p>
           <p>lucasbrito.carneiro@gmail.com</p>

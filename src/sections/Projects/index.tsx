@@ -33,6 +33,7 @@ const Projects: React.FC = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
+      id="projects"
     >
       <ProjectsContainer variants={projectVariant}>
         <SectionOne>

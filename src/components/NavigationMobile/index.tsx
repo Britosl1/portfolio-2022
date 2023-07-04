@@ -22,7 +22,7 @@ const NavigationMobile: React.FC = () => {
       <FiMenu
         className="icon"
         size={'40px'}
-        color={theme.primary.color}
+        color={theme.primary.text}
         onClick={() => setOpen(!open)}
         style={{ left: 20, top: 10, position: 'absolute' }}
       />

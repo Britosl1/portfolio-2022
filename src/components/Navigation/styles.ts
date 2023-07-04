@@ -11,7 +11,7 @@ export const NavigationContainer = styled.nav`
   top: 0;
   position: fixed;
   z-index: 1;
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   ul {
@@ -26,9 +26,10 @@ export const NavigationContainer = styled.nav`
     color: inherit;
     font-size: 14.5px;
     font-weight: 600;
+    color: ${({ theme }) => theme.primary.text};
     &:hover,
     &:focus {
-      color: ${({ theme }) => theme.primary.color};
+      color: ${({ theme }) => theme.button.link};
     }
   }
   @media screen and (max-width: 720px) {

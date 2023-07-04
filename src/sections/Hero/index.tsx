@@ -24,7 +24,7 @@ const heroVariant: Variants = {
     y: 0,
     transition: {
       type: 'spring',
-      bounce: 0.4,
+      bounce: 0.1,
       duration: 0.8,
     },
   },
@@ -38,12 +38,15 @@ const Hero: React.FC = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
+      id="about"
     >
-      <HeroContainer id="about" variants={heroVariant}>
+      <HeroContainer variants={heroVariant}>
         <HeroLeftContainer>
           <h1>
             Hello! I'm a
-            <h1 style={{ color: theme.primary.color }}>Front End Developer!</h1>
+            <h1 style={{ color: theme.secondary.text }}>
+              Front End Developer!
+            </h1>
           </h1>
           <Button
             title={`Let's Talk!`}

@@ -2,35 +2,39 @@ import styled from 'styled-components'
 
 export const ButtonContainerPrimary = styled.button`
   border-radius: 10px;
-  background-color: ${(props) => props.theme.primary.color};
   width: 160px;
   padding: 14px;
   display: flex;
   justify-content: center;
   font-weight: 600;
   font-size: 16px;
-  color: ${(props) => props.theme.primary.text};
-  border: none;
+  color: ${(props) => props.theme.button.link};
+  border: 1px solid;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
   :hover {
-    opacity: 2;
-    background: red;
+    outline: none;
+    box-shadow: 4px 4px 0 0 ${(props) => props.theme.button.link};
+    transform: translate(-5px, -5px);
   }
 `
 export const ButtonContainerSecondary = styled.button`
   border-radius: 10px;
-  background-color: ${(props) => props.theme.secondary.color};
   width: 160px;
   padding: 14px;
   display: flex;
   justify-content: center;
   font-weight: 600;
   font-size: 16px;
-  color: ${(props) => props.theme.secondary.text};
-  border: none;
+  color: ${(props) => props.theme.button.link};
+  border: 1px solid;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
   :hover {
-    opacity: 0.8;
-    transition: 0.8s ease;
-    color: ${(props) => props.theme.primary.text};
-    cursor: pointer;
+    outline: none;
+    box-shadow: 4px 4px 0 0 ${(props) => props.theme.button.link};
+    transform: translate(-5px, -5px);
   }
 `
