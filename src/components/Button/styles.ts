@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ButtonContainerPrimary = styled.button`
   border-radius: 10px;
-  width: 160px;
+  max-width: 220px;
   padding: 14px;
   display: flex;
   justify-content: center;
@@ -21,7 +21,8 @@ export const ButtonContainerPrimary = styled.button`
 `
 export const ButtonContainerSecondary = styled.button`
   border-radius: 10px;
-  width: 160px;
+  max-width: 220px;
+
   padding: 14px;
   display: flex;
   justify-content: center;

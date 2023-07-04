@@ -36,7 +36,7 @@ export const ContactFormContainer = styled.form`
     right: 10px;
     cursor: pointer;
   }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 769px) {
     width: 90%;
     button {
       align-self: center;

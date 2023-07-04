@@ -41,7 +41,7 @@ export const NavigationContainer = styled.nav<NavTypes>`
       color: ${({ theme }) => theme.button.link};
     }
   }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 769px) {
     display: none;
   }
 `

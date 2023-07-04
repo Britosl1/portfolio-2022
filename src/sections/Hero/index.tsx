@@ -1,17 +1,12 @@
 import React, { useState } from 'react'
 import Button from '../../components/Button'
-import RoundIcon from '../../components/RoundIcon'
-import Img from '../../images/pp.jpeg'
 
-import {
-  HeroContainer,
-  HeroLeftContainer,
-  HeroRightContainer,
-  IconsContainer,
-} from './styles'
+import resume from '../../images/resume.pdf'
+
+import { HeroContainer, HeroLeftContainer } from './styles'
 
 import { FiSend } from 'react-icons/fi'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiOutlineFilePdf } from 'react-icons/ai'
 import { theme } from '../../theme'
 import ContactForm from '../../components/ContactForm'
 import { motion, Variants } from 'framer-motion'
@@ -42,19 +37,33 @@ const Hero: React.FC = () => {
     >
       <HeroContainer variants={heroVariant}>
         <HeroLeftContainer>
-          <h1>
-            Hello! I'm a
-            <h1 style={{ color: theme.secondary.text }}>
-              Front End Developer!
+          <span>
+            Hello! My name is
+            <h1>
+              Lucas Brito,
+              <h1 style={{ color: theme.secondary.text }}>I'm a Developer!</h1>
             </h1>
-          </h1>
-          <Button
-            title={`Let's Talk!`}
-            icon={<FiSend />}
-            secondary
-            onClick={() => setShow(!show)}
-          />
-          <IconsContainer>
+          </span>
+          <p>
+            I work as a <span>Frontend Developer</span>. With almost three years
+            of professional experience in the field, I'm always looking for new
+            challenges!
+          </p>
+          <div className="button-container">
+            <Button
+              title={`Let's Talk!`}
+              icon={<FiSend />}
+              secondary
+              onClick={() => setShow(!show)}
+            />
+            <Button
+              title={`Check my resume!`}
+              icon={<AiOutlineFilePdf />}
+              secondary
+              onClick={() => window.open(resume)}
+            />
+          </div>
+          {/* <IconsContainer>
             <p>Check Out My</p>
             <a
               href="https://www.linkedin.com/in/lucas-c-brito/"
@@ -65,12 +74,12 @@ const Hero: React.FC = () => {
             <a href="https://github.com/Britosl1/" target="_blanck">
               <RoundIcon icon={<AiFillGithub size={30} />} />
             </a>
-          </IconsContainer>
+          </IconsContainer> */}
         </HeroLeftContainer>
-        <HeroRightContainer>
+        {/* <HeroRightContainer>
           <div id="octagon" />
           <img src={Img} alt="lucas-brito-img" />
-        </HeroRightContainer>
+        </HeroRightContainer> */}
         {show && <ContactForm onClose={() => setShow(!show)} />}
       </HeroContainer>
     </motion.div>

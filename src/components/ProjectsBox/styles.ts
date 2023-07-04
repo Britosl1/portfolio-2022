@@ -45,7 +45,7 @@ export const ProjectBoxContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 769px) {
     div {
       display: flex;
     }

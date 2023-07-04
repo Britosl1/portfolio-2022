@@ -6,17 +6,11 @@ export const ProjectsContainer = styled(motion.div)`
   justify-content: space-between;
   height: 100vh;
   h1 {
-    font-size: 44px;
     margin-bottom: 16px;
   }
-  @media screen and (max-width: 720px) {
-    padding: 30px;
-
+  @media screen and (max-width: 769px) {
     width: 100%;
     flex-direction: column;
-    h1 {
-      font-size: 38px;
-    }
   }
 `
 

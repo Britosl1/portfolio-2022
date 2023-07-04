@@ -11,6 +11,7 @@ const Navigation: React.FC = () => {
       setColorchange(false)
     }
   }
+
   window.addEventListener('scroll', changeNavbarColor)
   return (
     <NavigationContainer scrolled={colorChange}>

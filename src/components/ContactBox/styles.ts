@@ -23,7 +23,7 @@ export const ContactBoxInfoContainer = styled.div`
     font-weight: 600;
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 769px) {
     p {
       font-size: 10px;
     }

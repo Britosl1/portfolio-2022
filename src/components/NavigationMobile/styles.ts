@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export const TopNavigationMobileContainer = styled(motion.nav)`
   .icon {
     display: none;
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 769px) {
       display: block;
       /* position: fixed; */
     }
@@ -13,7 +13,7 @@ export const TopNavigationMobileContainer = styled(motion.nav)`
 
 export const NavigationMobileContainer = styled(motion.nav)`
   display: none;
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 769px) {
     display: flex;
     flex-direction: column;
     position: absolute;
