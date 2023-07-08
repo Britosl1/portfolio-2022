@@ -37,8 +37,9 @@ const NavigationMobile: React.FC = () => {
               <a href="#about"> About</a>
               <AiOutlineClose
                 size={'20px'}
-                color={theme.primary.text}
+                color={theme.button.link}
                 onClick={() => setOpen(!open)}
+                className="close-icon"
               />
             </li>
             <li>

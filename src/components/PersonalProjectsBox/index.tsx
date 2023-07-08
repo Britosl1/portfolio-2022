@@ -1,22 +1,22 @@
 import React from 'react'
 
-import { ProjectBoxContainer } from './styles'
+import { PersonalProjectsBoxContainer } from './styles'
 
-interface IProjectsBoxProps {
+interface IPersonalProjectsBoxProps {
   projectName: string
   stacks: { id: string; stack: string }[]
   url: string
   img: string
 }
 
-const ProjectsBox: React.FC<IProjectsBoxProps> = ({
+const PersonalProjectsBox: React.FC<IPersonalProjectsBoxProps> = ({
   img,
   projectName,
   url,
   stacks,
 }) => {
   return (
-    <ProjectBoxContainer href={url} target="_blank">
+    <PersonalProjectsBoxContainer href={url} target="_blank">
       <img src={img} alt="" />
       <div className="info-container">
         <div>
@@ -28,8 +28,8 @@ const ProjectsBox: React.FC<IProjectsBoxProps> = ({
           ))}
         </ul>
       </div>
-    </ProjectBoxContainer>
+    </PersonalProjectsBoxContainer>
   )
 }
 
-export default ProjectsBox
+export default PersonalProjectsBox

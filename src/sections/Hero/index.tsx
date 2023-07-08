@@ -33,7 +33,6 @@ const Hero: React.FC = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
-      id="about"
     >
       <HeroContainer variants={heroVariant}>
         <HeroLeftContainer>

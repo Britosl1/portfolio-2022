@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ProjectBoxContainer = styled.a`
+export const PersonalProjectsBoxContainer = styled.a`
   display: flex;
   border-top: 2px solid ${(props) => props.theme.button.link};
   width: 100%;

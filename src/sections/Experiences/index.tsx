@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import ExperienceBox from '../../components/ExperienceBox'
-import RoundIcon from '../../components/RoundIcon'
 import { experienceData } from './experienceData'
 
 import { motion, Variants } from 'framer-motion'
-import { SiJavascript, SiMongodb, SiReact, SiTypescript } from 'react-icons/si'
-import { FaNodeJs, FaVuejs } from 'react-icons/fa'
+
 import {
   ExperiencesContainer,
   ExperiencesLeftContainer,
-  ExperiencesRightContainer,
   SkillsContainer,
-  SkillsIconsContainer,
 } from './styles'
 
 const experiencesVariant: Variants = {
@@ -35,7 +31,7 @@ const Experiences: React.FC = () => {
     const filteredData = experienceData.filter(
       (company) => company.company === companyName
     )
-    return setCompany(filteredData)
+    setCompany(filteredData)
   }
 
   useEffect(() => {

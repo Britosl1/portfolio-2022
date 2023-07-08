@@ -9,6 +9,7 @@ export const ButtonContainerPrimary = styled.button`
   font-weight: 600;
   font-size: 16px;
   color: ${(props) => props.theme.button.link};
+  background-color: #0a192f;
   border: 1px solid;
   cursor: pointer;
   transition: ease-in-out 0.2s;
@@ -29,6 +30,8 @@ export const ButtonContainerSecondary = styled.button`
   font-weight: 600;
   font-size: 16px;
   color: ${(props) => props.theme.button.link};
+  background-color: #0a192f;
+
   border: 1px solid;
   cursor: pointer;
   transition: ease-in-out 0.2s;

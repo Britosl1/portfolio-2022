@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: '1',
     startDate: 'Oct/2022',
-    endDate: '',
+    endDate: 'Now',
     company: 'Q4 Inc',
     role: 'Frontend Developer',
     activities: [
@@ -59,7 +59,7 @@ export const experienceData = [
     startDate: 'Dec/2017',
     endDate: 'Dec/2020',
     company: 'LeCupon',
-    role: 'VP sales',
+    role: 'Sales VP',
     activities: [
       {
         id: '1',

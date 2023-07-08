@@ -17,7 +17,7 @@ export const NavigationMobileContainer = styled(motion.nav)`
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: ${({ theme }) => theme.primary.text};
+    background-color: ${({ theme }) => theme.secondary.text};
     top: 0;
     height: 100%;
     min-width: 70%;
@@ -28,11 +28,18 @@ export const NavigationMobileContainer = styled(motion.nav)`
 
     ul {
       list-style: none;
+      background-color: ${({ theme }) => theme.secondary.text};
     }
     li {
       margin: 20px;
+      background-color: ${({ theme }) => theme.secondary.text};
+    }
+    .close-icon {
+      background-color: ${({ theme }) => theme.secondary.text};
     }
     a {
+      background-color: ${({ theme }) => theme.secondary.text};
+
       text-decoration: none;
       color: white;
       font-weight: bold;

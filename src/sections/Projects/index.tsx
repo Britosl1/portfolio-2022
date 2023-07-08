@@ -1,16 +1,8 @@
 import React from 'react'
-import magalu from '../../images/magalu.png'
-import carrefour from '../../images/carrefour.png'
-import bestSongs from '../../images/best-songs.png'
 
-import {
-  ProjectsContainer,
-  SectionOne,
-  SectionTwo,
-  SectionThree,
-} from './styles'
+import { ProjectsContainer } from './styles'
 import ProjectsBox from '../../components/ProjectsBox'
-import { bestSongsStack, ninenineJobsStack } from './projectsData'
+import { professionalProjects } from './projectsData'
 import { Variants, motion } from 'framer-motion'
 
 const projectVariant: Variants = {
@@ -36,31 +28,18 @@ const Projects: React.FC = () => {
       id="projects"
     >
       <ProjectsContainer variants={projectVariant}>
-        <SectionOne>
-          <h1>Some projects!</h1>
+        <h1>
+          Professional Projects<span> (some of them)</span>
+        </h1>
+        {professionalProjects.map((project) => (
           <ProjectsBox
-            projectName="Magalu Recruiment Site"
-            url="https://carreiras.magazineluiza.com.br/"
-            img={magalu}
-            stacks={ninenineJobsStack}
+            key={project.id}
+            projectName={project.name}
+            url={project.url}
+            img={project.img}
+            stacks={project.stacks}
           />
-        </SectionOne>
-        <SectionTwo>
-          <ProjectsBox
-            projectName="Carrefour Recruiment Site"
-            url="https://carrefour.99jobs.com/"
-            img={carrefour}
-            stacks={ninenineJobsStack}
-          />
-        </SectionTwo>
-        <SectionThree>
-          <ProjectsBox
-            projectName="Best Songs - Full Stack"
-            url="https://github.com/Britosl1/bestSongs-app"
-            img={bestSongs}
-            stacks={bestSongsStack}
-          />
-        </SectionThree>
+        ))}
       </ProjectsContainer>
     </motion.div>
   )

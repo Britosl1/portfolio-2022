@@ -8,6 +8,7 @@ export const ExperiencesContainer = styled(motion.section)`
   @media screen and (max-width: 769px) {
     flex-direction: column;
     justify-content: center;
+    /* height: auto; */
   }
 `
 
@@ -26,6 +27,9 @@ export const ExperiencesLeftContainer = styled.div`
     width: 100%;
     p {
       width: 100%;
+    }
+    h1 {
+      text-align: center;
     }
   }
 `

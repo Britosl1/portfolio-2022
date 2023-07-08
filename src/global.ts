@@ -13,7 +13,6 @@ const GlobalStyles = createGlobalStyle<MyProps>`
        box-sizing:border-box;
        font-family: 'Roboto', sans-serif;
        scroll-behavior: smooth;
-       background-color: #0a192f;
    }
    #root{
        margin:0 auto;
@@ -21,6 +20,8 @@ const GlobalStyles = createGlobalStyle<MyProps>`
 
    body {
     padding: 0px 100px;
+    background-color: #0a192f;
+
    }
 
    h1 {
