@@ -18,7 +18,7 @@ export const ProjectsContainer = styled(motion.div)`
   @media screen and (max-width: 769px) {
     width: 100%;
     flex-direction: column;
-    /* margin: 280px 0px 80px; */
+    margin: 500px 0px 700px;
   }
 `
 
