@@ -3,6 +3,7 @@ import Experiences from './sections/Experiences'
 import Footer from './sections/Footer'
 import Hero from './sections/Hero'
 import NavBar from './sections/NavBar'
+import PersonalProjects from './sections/PersonalProjects'
 import Projects from './sections/Projects'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Hero />
       <About />
+      <PersonalProjects />
       <Projects />
       <Experiences />
       <Footer />

@@ -20,6 +20,9 @@ const Navigation: React.FC = () => {
           <a href="#about"> About</a>
         </li>
         <li>
+          <a href="#personal-projects"> Personal Projects</a>
+        </li>
+        <li>
           <a href="#projects"> Projects</a>
         </li>
         <li>

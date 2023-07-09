@@ -15,7 +15,7 @@ export const NavigationContainer = styled.nav<NavTypes>`
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 99999;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: ${(props) => (props.scrolled ? '#ccd6f6' : 'transparent')};
   transition: ease-out 0.2s;

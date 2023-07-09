@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { ProjectBoxContainer } from './styles'
+import { FiExternalLink } from 'react-icons/fi'
 
 interface IProjectsBoxProps {
   projectName: string
@@ -8,6 +9,8 @@ interface IProjectsBoxProps {
   url: string
   img: string
 }
+
+const styleURL = { color: '#64ffda', fontSize: '1.7em', marginLeft: '10px' }
 
 const ProjectsBox: React.FC<IProjectsBoxProps> = ({
   img,
@@ -21,6 +24,9 @@ const ProjectsBox: React.FC<IProjectsBoxProps> = ({
       <div className="info-container">
         <div>
           <h4>{projectName}</h4>
+          <div className="icon-container">
+            <FiExternalLink style={styleURL} />
+          </div>
         </div>
         <ul>
           {stacks.map((stack) => (

@@ -7,6 +7,7 @@ export const ProjectsContainer = styled(motion.div)`
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  margin-bottom: 500px;
   h1 {
     margin-bottom: 16px;
     span {
@@ -17,7 +18,7 @@ export const ProjectsContainer = styled(motion.div)`
   @media screen and (max-width: 769px) {
     width: 100%;
     flex-direction: column;
-    margin: 280px 0px 180px;
+    /* margin: 280px 0px 80px; */
   }
 `
 

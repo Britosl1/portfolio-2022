@@ -52,10 +52,16 @@ export const ProjectBoxContainer = styled.a`
       list-style: none;
       margin: 0px 2px;
     }
+    .icon-container {
+      display: none;
+    }
 
     @media screen and (max-width: 769px) {
       flex-direction: column;
       align-items: center;
+      .icon-container {
+        display: block;
+      }
     }
   }
 

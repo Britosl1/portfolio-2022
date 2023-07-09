@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
-export const PersonalProjectsBoxContainer = styled.a`
+export const PersonalProjectsBoxContainer = styled.div`
   display: flex;
   border-top: 2px solid ${(props) => props.theme.button.link};
   width: 100%;
   padding-top: 20px;
   text-decoration: none;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   transition: ease-in-out 0.5s;
   margin-bottom: 20px;
+  flex-direction: column;
 
   img {
     max-width: 520px;
@@ -22,9 +23,8 @@ export const PersonalProjectsBoxContainer = styled.a`
     border-radius: 6px;
     padding: 14px 20px;
     margin-left: -10px;
-    height: 80%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    max-width: 300px;
+    width: 80%;
     transition: ease-in-out 0.5s;
 
     div {
@@ -32,14 +32,19 @@ export const PersonalProjectsBoxContainer = styled.a`
       align-items: center;
       justify-content: space-between;
       background-color: transparent;
+
       h4 {
         font-size: 24px;
         color: ${(props) => props.theme.primary.text};
       }
     }
 
+    p {
+      margin-top: 10px;
+    }
+
     ul {
-      /* display: flex; */
+      display: flex;
       flex-wrap: wrap;
       margin-top: 10px;
       padding: 0;
@@ -51,6 +56,17 @@ export const PersonalProjectsBoxContainer = styled.a`
       font-weight: 600;
       list-style: none;
       margin: 0px 2px;
+    }
+
+    li:before {
+      content: '» ';
+    }
+
+    .icons-container {
+      margin-top: 20px;
+      width: 60px;
+      display: flex;
+      align-items: center;
     }
 
     @media screen and (max-width: 769px) {
